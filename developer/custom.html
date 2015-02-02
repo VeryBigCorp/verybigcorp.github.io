@@ -30,67 +30,7 @@
 		<script src='assets/js/min/moment.min.js'></script>
 		<script src='assets/js/min/fullcalendar.min.js'></script>
    		<script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-
-				$('#calendar').fullCalendar({
-					defaultDate : new Date(),
-					editable : false,
-					eventLimit : false, // allow "more" link when too many events
-					contentHeight: 300,
-					aspectRatio: 1.7777,
-					events : [{
-						title : 'All Day Event',
-						start : '2014-11-01'
-					}, {
-						title : 'Long Event',
-						start : '2014-11-07',
-						end : '2014-11-10'
-					}, {
-						id : 999,
-						title : 'Repeating Event',
-						start : '2014-11-09T16:00:00'
-					}, {
-						id : 999,
-						title : 'Repeating Event',
-						start : '2014-11-16T16:00:00'
-					}, {
-						title : 'Conference',
-						start : '2014-11-11',
-						end : '2014-11-13'
-					}, {
-						title : 'Meeting',
-						start : '2014-11-12T10:30:00',
-						end : '2014-11-12T12:30:00'
-					}, {
-						title : 'Lunch',
-						start : '2014-11-12T12:00:00'
-					}, {
-						title : 'Meeting',
-						start : '2014-11-12T14:30:00'
-					}, {
-						title : 'Happy Hour',
-						start : '2014-11-12T17:30:00'
-					}, {
-						title : 'Dinner',
-						start : '2014-11-12T20:00:00'
-					}, {
-						title : 'Birthday Party',
-						start : '2014-11-13T07:00:00'
-					}, {
-						title : 'Click for Google',
-						url : 'http://google.com/',
-						start : '2014-11-28'
-					}],
-					eventColor: '#FF3333'
-				});
-
-				
-
-			});
-			
-    				GitHubActivity.feed({ username: "verybigcorp", selector: "#ghfeed" });
-		</script>
+		
 	</head>
 	<body>
 		<!-- HEADER -->
@@ -258,3 +198,65 @@
 			</div>
 		</footer>
 	</body>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('#calendar').fullCalendar({
+			defaultDate : new Date(),
+			editable : false,
+			eventLimit : false, // allow "more" link when too many events
+			contentHeight: 300,
+			aspectRatio: 1.7777,
+			events : [{
+				title : 'All Day Event',
+				start : '2014-11-01'
+			}, {
+				title : 'Long Event',
+				start : '2014-11-07',
+				end : '2014-11-10'
+			}, {
+				id : 999,
+				title : 'Repeating Event',
+				start : '2014-11-09T16:00:00'
+			}, {
+				id : 999,
+				title : 'Repeating Event',
+				start : '2014-11-16T16:00:00'
+			}, {
+				title : 'Conference',
+				start : '2014-11-11',
+				end : '2014-11-13'
+			}, {
+				title : 'Meeting',
+				start : '2014-11-12T10:30:00',
+				end : '2014-11-12T12:30:00'
+			}, {
+				title : 'Lunch',
+				start : '2014-11-12T12:00:00'
+			}, {
+				title : 'Meeting',
+				start : '2014-11-12T14:30:00'
+			}, {
+				title : 'Happy Hour',
+				start : '2014-11-12T17:30:00'
+			}, {
+				title : 'Dinner',
+				start : '2014-11-12T20:00:00'
+			}, {
+				title : 'Birthday Party',
+				start : '2014-11-13T07:00:00'
+			}, {
+				title : 'Click for Google',
+				url : 'http://google.com/',
+				start : '2014-11-28'
+			}],
+			eventColor: '#FF3333'
+		});
+
+	
+
+	});
+
+	GitHubActivity.feed({ username: "verybigcorp", selector: "#ghfeed" });
+</script>
